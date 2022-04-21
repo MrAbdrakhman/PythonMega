@@ -1,0 +1,3 @@
+45var.py   Donloads  listcity.py  Pictures   snap
+Desktop    first      Music        Public     Templates
+Documents  kot.py     PCH          PythonMax  Videos
