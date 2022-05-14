@@ -32,11 +32,10 @@ iphone = Phone(number=+996708699767, model='Iphone', weight=170)
 print(iphone.return1())
 huawei = Phone(number=+996700699767, model='Huawei', weight=250)
 print(huawei.return1())
-print(f'{samsung} \n{iphone} \n{huawei}')
+#print(f'{samsung} \n{iphone} \n{huawei}')
 print(samsung.sendMassage(), iphone.sendMassage(), huawei.sendMassage())
 
 phones = [samsung, iphone, huawei]
 
 print({'Phones': {phone.model: phone.number for phone in phones}})
 
-print(Phone)
