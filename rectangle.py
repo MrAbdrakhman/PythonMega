@@ -40,8 +40,8 @@ while True:
     if a == 1:
         Mon.vyvod()
     elif a == 2:
-        newa = int(input())
-        newb = int(input())
-        Mon.change(newb=newb, newa=newa)
+        newa = int(input('введите сторону а '))
+        newb = int(input('введите сторону b '))
+        Mon.change(newa, newb)
     else:
         print('Error')
