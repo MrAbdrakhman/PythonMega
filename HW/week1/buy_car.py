@@ -1,10 +1,13 @@
-print('покупка авто ')
-marka=input('марка авто если лексус или тайота нажмите 1 если другое то 2 ')
-probeg=int(input('введите пробег в км ' ))
-god=input('введите год выпуска ' )
-color=input ('введите цвет авто если серый или белый то 1 если другой то 2' )
-price=int(input('введите цену авто ' )
-rul=input('руль правый введите 1 если левый то 2' )
-owner=int(input('сколько было хозяинов авто? ' )
-
-
+marka=(input("Введите марку авто "))
+god=int(input("Введите год выпуска авто "))
+probeg=int(input("Введите пробег авто в км "))
+color=(input("Введите цвет авто "))
+rul=(input("Руль авто (правый или левый) "))
+owners=int(input("Сколько было собственников? "))
+price=int(input("Введите цену на авто "))
+if marka==('Toyota' or marka=='Lexus') and probeg<=150000 and god>=2004 and (color=='white' or color=='grey') and owners<=2 and  rul=='left' and price<=10000:
+    print("Покупаем")
+elif marka==('Toyota' or marka=='Lexus') and probeg<=200000 and god>=2004 and (color=='white' or color=='grey') and owners<=2 and  rul=='left' and price<=8000:
+    print("Покупаем")
+else:
+    print('Не покупаем')
