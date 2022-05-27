@@ -4,7 +4,7 @@
 
 import psycopg2
 import random as rd
-
+from pprint import pprint
 
 conn = psycopg2.connect(
     dbname='followers',
@@ -413,12 +413,13 @@ cursor.execute('SELECT user_id, login FROM users;')
 cursor.execute("SELECT * FROM users WHERE login LIKE '%sas%' OR login LIKE '%cg%' OR login LIKE '%si%' OR login LIKE '%am%' OR login LIKE '%kwe%' OR login LIKE '%er%' OR login LIKE '%ka%' OR login LIKE '%an%';")
 cursor.execute("SELECT * FROM users WHERE login LIKE '%lol' OR login LIKE '%kan' OR login LIKE '%ck' OR login LIKE '%ie' OR login LIKE '%ig';")
 cursor.execute("SELECT * FROM users WHERE login LIKE 'a%' OR login LIKE 'b%' OR login LIKE 'c%' OR login LIKE 'd%' OR login LIKE 'M%' OR login LIKE 'D%' OR login LIKE 'A%';")
-# cursor.execute('')
-# cursor.execute('')
+# cursor.execute('')#Как зовут самого знаменитого Сеньор Программиста(Senior Programmer) из Израиля(Israel)?
+# cursor.execute('select * from produsers order by prodused_date;')
 # cursor.execute('')ls
 
-print(cursor.fetchall())
+# print(cursor.fetchall())
 
+pprint(cursor.fetchall())
 
 conn.commit()
 

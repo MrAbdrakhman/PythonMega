@@ -24,7 +24,8 @@ class Phone:
     def phone_values(self):
         return self.number
 
-
+    def __str__(self):
+        return f"Model: {self.model}  number: {self.number} адрес: {self.weight} "
 
 samsung = Phone(number=+996705699767, model='Samsung', weight=200)
 print(samsung.return1())
@@ -38,4 +39,5 @@ print(samsung.sendMassage(), iphone.sendMassage(), huawei.sendMassage())
 phones = [samsung, iphone, huawei]
 
 print({'Phones': {phone.model: phone.number for phone in phones}})
-
+print(Phone)
+print(Phone.__dict__)
