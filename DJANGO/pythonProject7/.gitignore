@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+myvenv
+web_yoga_gym/db.sqlite3
+/static
+.DS_Store
